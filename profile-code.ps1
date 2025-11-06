@@ -1,4 +1,5 @@
-
+# ===== Configuracao Global =====
+# Garante TLS 1.2 para downloads do PowerShell Gallery no Windows PowerShell 5.1
 try { [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12 } catch {}
 
 # Garante ExecutionPolicy
